@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (icon.dataset.dark) icon.src = icon.dataset.dark;
     });
   } else {
-    if (toggleIcon) toggleIcon.src = 'images/moon.png';
+    if (toggleIcon) toggleIcon.src = 'images/Moon.png';
     socialIcons.forEach(icon => {
       if (icon.dataset.light) icon.src = icon.dataset.light;
     });
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const isDark = body.classList.contains('dark-mode');
 
     if (toggleIcon) {
-      toggleIcon.src = isDark ? 'images/sun.png' : 'images/moon.png';
+      toggleIcon.src = isDark ? 'images/sun.png' : 'images/Moon.png';
     }
 
     socialIcons.forEach(icon => {
