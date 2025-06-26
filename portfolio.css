@@ -1,0 +1,601 @@
+/* Global Reset */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  background-color: #f5faff;
+  overflow: hidden;
+  padding: 40px;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap:10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+
+/* Navigation */
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 8%;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  text-align: right;
+  padding-left: 50px;
+}
+
+nav ul li a {
+  text-transform: capitalize;
+  color: greenyellow;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+.logo {
+  height: 30px;
+  width: auto;
+}
+
+/* Detail Section */
+.detel {
+  margin: 150px;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.detel h1 {
+background: linear-gradient(90deg, #32F6F6 0%, #A6A79F 100%);
+width: 150px;
+height: 50px;
+color: #fff;
+border-top-left-radius: 50px;
+border-top-right-radius: 50px;
+border-bottom-right-radius: 50px;
+
+font-family: Segoe UI;
+font-weight: 700;
+font-size: 30px;
+padding-left:  20px;
+text-transform: uppercase;
+}
+
+.detel p {
+  font-size: 10px;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: Segoe UI;
+  letter-spacing: 0px;
+  margin-top: 30px;
+}
+
+.detel span {
+  font-size: 30px;
+  font-weight: bold;
+ font-family: Segoe UI;
+ text-decoration: underline;
+}
+
+
+.detel strong {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* CTA Buttons */
+.detel a {
+  background-color: black;
+  padding: 10px 18px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+  margin-right: 15px;
+  border-radius: 5px;
+  border: 4px  white;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+#btn {
+    background-color: orange;
+}
+
+.detel a:hover {
+  background-color: #005f99;
+}
+
+/* Hero Images */
+.images {
+  width: 45%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  overflow: hidden;
+}
+
+/* Background image styling */
+.shape {
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/* Foreground hero image styling */
+.image {
+  position: absolute;
+    height: 90%;
+    left: 46%;
+    bottom: 58px;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+    z-index: 2;
+}
+
+
+
+/* Social Icons */
+.social-icons {
+  position: fixed;
+  bottom: 20px;
+  left: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+
+
+.about {
+  background-color: #f9f9f9;
+  padding: 80px 40px;
+}
+
+.about-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-image {
+  flex: 1 1 200px;
+  max-width: 250px;
+}
+
+.about-image.left {
+  width: 250px;
+  height: 320px;
+  position: relative;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+
+/* Background image with layered hand */
+.hand-wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url('images/handbackside.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.front-hand {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.about-content {
+  flex: 2 1 500px;
+  max-width: 700px;
+}
+
+.about-content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+
+/* Optional: Hover Effect */
+.front-hand:hover {
+  transform: scale(1.03);
+}
+
+.about-image.right {
+  width: 250px;
+  height: auto;
+  position: relative;
+  
+}
+
+.about-image.right img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: none;
+  transition: transform 0.3s ease;
+}
+
+/* Optional Hover Effect */
+.about-image.right img:hover {
+  transform: scale(1.05) rotate(1deg);
+}
+
+
+.below-images {
+  display: flex;
+  justify-content: center;       /* Centers the row */
+  align-items: center;
+  gap: 20px;                     /* Space between images */
+            /* Space from content above */
+}
+
+.below-images img {
+ width: 236px;
+  height: 160px;
+  border-radius: 10px;           /* Optional: rounded corners */
+  object-fit: contain;
+}
+
+
+/* ------------------------------
+   NAVIGATION + HAMBURGER MENU
+------------------------------- */
+
+/* Container inside nav */
+.nav-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Hamburger icon hidden by default */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  margin-left: auto;
+  z-index: 1001; /* on top of nav */
+}
+
+/* Hamburger bar lines */
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: greenyellow;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+/* Nav Links (Desktop Default) */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+/* Nav links style */
+.nav-links li a {
+  text-transform: capitalize;
+  color: greenyellow;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: white;
+}
+
+/* Responsive Navigation */
+@media (max-width: 480px) {
+  /* Navigation */
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 16px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .head {
+    font-size: 18px;
+  }
+
+  .logo {
+    height: 22px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+    color: #444;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 20px;
+  }
+
+  .detel {
+    margin: 80px 10px 20px;
+    padding: 10px;
+  }
+
+  .detel h1 {
+    font-size: 22px;
+    padding: 6px 12px;
+    width: fit-content;
+  }
+
+  .detel p,
+  .detel strong,
+  .detel span {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .detel a {
+    font-size: 13px;
+    padding: 8px 12px;
+    margin-top: 15px;
+  }
+
+  /* Hero Images */
+  .images {
+    position: static;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+  }
+
+  .shape {
+    display: none; /* Optional: hide for clean look */
+  }
+
+  .image {
+    width: 80%;
+    height: auto;
+    position: static;
+    transform: none;
+  }
+
+  /* Social Icons */
+  .social-icons {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 10px;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* About Section */
+  .about {
+    padding: 40px 20px;
+  }
+
+  .about-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .about-image.left,
+  .about-image.right,
+  .about-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about-content h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .about-content p {
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  /* Hand Wrapper Responsive */
+  .hand-wrapper {
+    width: 100%;
+    padding-top: 100%; /* 1:1 aspect ratio */
+    position: relative;
+    background-image: url('images/handbackside.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .front-hand {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  /* Vector Image (Right) */
+  .about-image.right img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* Below Images */
+  .below-images {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .below-images img {
+    width: 80%;
+    max-width: 200px;
+  }
+}
+
+
+
+/* ---------------------------
+   Dark Mode Styles
+---------------------------- */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .hero {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode nav {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode nav ul li a {
+  color: #90ee90;
+}
+
+body.dark-mode .detel p {
+  color: #ccc;
+}
+
+body.dark-mode .about {
+  background-color: #1a1a1a;
+}
+
+body.dark-mode .about-content p {
+  color: #ccc;
+}
+
+body.dark-mode .nav-links.active {
+  background-color: #222;
+}
+
+body.dark-mode .dark-toggle {
+  color: #000000;
+}
+
+/* Toggle button */
+.dark-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.dark-toggle img {
+  width: 24px;
+  height: 24px;
+}
+
+
+
+/* Light/Dark Icon Style Toggle */
+body.dark-mode .icon {
+  filter: brightness(0) invert(1); /* invert icon color for dark background */
+}
+
+body.dark-mode .icon:hover {
+  filter: brightness(1.2) invert(1);
+}
+
+
+
+@media (max-width: 768px) {
+  .dark-toggle {
+    position: fixed;
+    top: 16px;
+    right: 20px;
+    z-index: 1001;
+  }
+}
